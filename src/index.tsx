@@ -1,15 +1,14 @@
-import  ReactDOM  from "react-dom";
+import ReactDOM from "react-dom";
 import EventComponent from "./events/EventComponent";
+import UserSearch from "./refs/UserSearch";
 import GuestList from "./state/guestList";
-import UserSearch from "./state/UserSearch";
 
 const App = () => {
-  return <div> 
-    <EventComponent/>
-  </div>
+  return (
+    <div>
+      <UserSearch />
+    </div>
+  );
 };
 
-ReactDOM.render(
-  <App/>,
-  document.querySelector('#root')
-);
+ReactDOM.render(<App />, document.querySelector("#root"));
